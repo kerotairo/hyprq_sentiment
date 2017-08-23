@@ -4,7 +4,7 @@
 
     $dbh = getPDO();
 
-    $get_sql = "SELECT * FROM NewSentiments WHERE label =''";
+    $get_sql = "SELECT id FROM NewSentiments WHERE label =''";
     $result = getQueryResults($get_sql);
 
     if(trim($result['error'][2] == "")){
