@@ -4,7 +4,7 @@
 
     $dbh = getPDO();
 
-    $get_sql = "SELECT * FROM NewSentiments WHERE label ='None'";
+    $get_sql = "SELECT * FROM NewSentiments WHERE label is NULL";
     $result = getQueryResults($get_sql);
 
     if(trim($result['error'][2] == "")){
