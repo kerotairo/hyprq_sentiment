@@ -6,7 +6,7 @@
 
     $dbh = getPDO();
 
-    $get_sql = "UPDATE NewSentiments SET Label = '$value' WHERE id = '$id'";
+    $get_sql = "UPDATE NewSentiments SET label = '$value' WHERE id = '$id'";
     $result = $dbh->exec($get_sql);
 
     echo $result;
