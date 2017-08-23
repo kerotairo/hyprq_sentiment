@@ -3,7 +3,7 @@
 
     $dbh = getPDO();
 
-    $get_sql = "SELECT * FROM random WHERE Label = NULL";
+    $get_sql = "SELECT * FROM NewSentiments WHERE Label = NULL";
     $result = getQueryResults($get_sql);
 
     if(trim($result['error'][2] == "")){
@@ -18,7 +18,7 @@
 
             $randomKey = array_rand($array, 1);
 
-            $get_sql = "SELECT * FROM random WHERE id = '$array[$randomKey]'";
+            $get_sql = "SELECT * FROM NewSentiments WHERE id = '$array[$randomKey]'";
             $result2 = getQueryResults($get_sql);
 
             if(trim($result2['error'][2]) == ""){
