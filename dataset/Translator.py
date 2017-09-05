@@ -26,5 +26,5 @@ posts["Label"] = None
 from googletrans import Translator
 translator = Translator()
 
-posts["Translated"]= posts.iloc[1:100:,1].apply(FilTranslate)
+posts["Translated"]= posts.iloc[:,1].apply(FilTranslate)
 posts.to_csv("WithTranslation.csv", sep=",", encoding = 'utf-8', index=False)
