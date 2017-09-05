@@ -15,6 +15,7 @@ def FilTranslate(posts):
         print(translated.text)
     except Exception:
         print(Exception.args)
+        return "This had errors"
         pass
         #translated = translator.translate("")
     return translated.text
