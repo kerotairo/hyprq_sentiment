@@ -2,7 +2,7 @@
     
 
     function getPDO(){
-        $dsn = 'mysql:dbname=postswithsentiments;host=localhost;charset=utf8';
+        $dsn = 'mysql:dbname=postswithsentiments;host=54.244.61.6;charset=utf8';
         $user = 'root';
         $password = 'GioRan123';
         
